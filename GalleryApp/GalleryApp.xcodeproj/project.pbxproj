@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A151A0CB292DE85000322EB6 /* GalleryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A0CA292DE85000322EB6 /* GalleryAppApp.swift */; };
-		A151A0CD292DE85000322EB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A0CC292DE85000322EB6 /* ContentView.swift */; };
+		A151A0CD292DE85000322EB6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A0CC292DE85000322EB6 /* LoadingView.swift */; };
 		A151A0CF292DE85200322EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A151A0CE292DE85200322EB6 /* Assets.xcassets */; };
 		A151A0D2292DE85200322EB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A151A0D1292DE85200322EB6 /* Preview Assets.xcassets */; };
 		A151A0DC292DE85200322EB6 /* GalleryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A0DB292DE85200322EB6 /* GalleryAppTests.swift */; };
@@ -25,6 +25,13 @@
 		A151A10E292DF18500322EB6 /* GalleryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A10C292DF18500322EB6 /* GalleryGridView.swift */; };
 		A151A110292DF1AA00322EB6 /* GalleryGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A10F292DF1AA00322EB6 /* GalleryGridCell.swift */; };
 		A151A111292DF1AA00322EB6 /* GalleryGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A10F292DF1AA00322EB6 /* GalleryGridCell.swift */; };
+		A151A113292DF3B800322EB6 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A112292DF3B800322EB6 /* GalleryModel.swift */; };
+		A151A114292DF3B800322EB6 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A112292DF3B800322EB6 /* GalleryModel.swift */; };
+		A151A116292DF48800322EB6 /* GalleryGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A115292DF48800322EB6 /* GalleryGridViewModel.swift */; };
+		A151A117292DF48800322EB6 /* GalleryGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A115292DF48800322EB6 /* GalleryGridViewModel.swift */; };
+		A151A11A292E073600322EB6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A151A119292E073600322EB6 /* SDWebImageSwiftUI */; };
+		A151A11D292E092100322EB6 /* GalleryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A11C292E092100322EB6 /* GalleryDetailView.swift */; };
+		A151A11E292E092100322EB6 /* GalleryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A11C292E092100322EB6 /* GalleryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +54,7 @@
 /* Begin PBXFileReference section */
 		A151A0C7292DE85000322EB6 /* GalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A151A0CA292DE85000322EB6 /* GalleryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryAppApp.swift; sourceTree = "<group>"; };
-		A151A0CC292DE85000322EB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A151A0CC292DE85000322EB6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A151A0CE292DE85200322EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A151A0D1292DE85200322EB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A151A0D7292DE85200322EB6 /* GalleryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalleryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +67,9 @@
 		A151A109292DF05D00322EB6 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		A151A10C292DF18500322EB6 /* GalleryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryGridView.swift; sourceTree = "<group>"; };
 		A151A10F292DF1AA00322EB6 /* GalleryGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryGridCell.swift; sourceTree = "<group>"; };
+		A151A112292DF3B800322EB6 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		A151A115292DF48800322EB6 /* GalleryGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryGridViewModel.swift; sourceTree = "<group>"; };
+		A151A11C292E092100322EB6 /* GalleryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A151A11A292E073600322EB6 /* SDWebImageSwiftUI in Frameworks */,
 				A151A104292DEEFD00322EB6 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,7 +126,7 @@
 				A151A0FA292DED6400322EB6 /* Services */,
 				A151A0F4292DEA8300322EB6 /* MVVM */,
 				A151A0CA292DE85000322EB6 /* GalleryAppApp.swift */,
-				A151A0CC292DE85000322EB6 /* ContentView.swift */,
+				A151A0CC292DE85000322EB6 /* LoadingView.swift */,
 				A151A0CE292DE85200322EB6 /* Assets.xcassets */,
 				A151A0D0292DE85200322EB6 /* Preview Content */,
 			);
@@ -169,6 +180,7 @@
 		A151A0F6292DEA9B00322EB6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A151A112292DF3B800322EB6 /* GalleryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +197,7 @@
 		A151A0F8292DED3D00322EB6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A151A115292DF48800322EB6 /* GalleryGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +205,7 @@
 		A151A0F9292DED4700322EB6 /* GalleryDetails */ = {
 			isa = PBXGroup;
 			children = (
+				A151A11B292E090C00322EB6 /* View */,
 			);
 			path = GalleryDetails;
 			sourceTree = "<group>";
@@ -245,6 +259,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		A151A11B292E090C00322EB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A151A11C292E092100322EB6 /* GalleryDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +285,7 @@
 			name = GalleryApp;
 			packageProductDependencies = (
 				A151A103292DEEFD00322EB6 /* SwiftyJSON */,
+				A151A119292E073600322EB6 /* SDWebImageSwiftUI */,
 			);
 			productName = GalleryApp;
 			productReference = A151A0C7292DE85000322EB6 /* GalleryApp.app */;
@@ -338,6 +361,7 @@
 			mainGroup = A151A0BE292DE85000322EB6;
 			packageReferences = (
 				A151A102292DEEFD00322EB6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				A151A118292E073600322EB6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = A151A0C8292DE85000322EB6 /* Products */;
 			projectDirPath = "";
@@ -381,13 +405,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A151A0CD292DE85000322EB6 /* ContentView.swift in Sources */,
+				A151A0CD292DE85000322EB6 /* LoadingView.swift in Sources */,
 				A151A10D292DF18500322EB6 /* GalleryGridView.swift in Sources */,
+				A151A11D292E092100322EB6 /* GalleryDetailView.swift in Sources */,
 				A151A0FC292DED7F00322EB6 /* ServiceAPI.swift in Sources */,
 				A151A10A292DF05D00322EB6 /* Util.swift in Sources */,
 				A151A110292DF1AA00322EB6 /* GalleryGridCell.swift in Sources */,
 				A151A0CB292DE85000322EB6 /* GalleryAppApp.swift in Sources */,
+				A151A113292DF3B800322EB6 /* GalleryModel.swift in Sources */,
 				A151A107292DEF6F00322EB6 /* Constant.swift in Sources */,
+				A151A116292DF48800322EB6 /* GalleryGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,9 +425,12 @@
 				A151A0FD292DED7F00322EB6 /* ServiceAPI.swift in Sources */,
 				A151A0DC292DE85200322EB6 /* GalleryAppTests.swift in Sources */,
 				A151A108292DEF6F00322EB6 /* Constant.swift in Sources */,
+				A151A11E292E092100322EB6 /* GalleryDetailView.swift in Sources */,
+				A151A114292DF3B800322EB6 /* GalleryModel.swift in Sources */,
 				A151A10B292DF05D00322EB6 /* Util.swift in Sources */,
 				A151A111292DF1AA00322EB6 /* GalleryGridCell.swift in Sources */,
 				A151A10E292DF18500322EB6 /* GalleryGridView.swift in Sources */,
+				A151A117292DF48800322EB6 /* GalleryGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,6 +751,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		A151A118292E073600322EB6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -728,6 +766,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A151A102292DEEFD00322EB6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		A151A119292E073600322EB6 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A151A118292E073600322EB6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

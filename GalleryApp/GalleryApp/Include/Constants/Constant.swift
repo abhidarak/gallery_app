@@ -10,7 +10,7 @@ import Foundation
 struct Constant {
     
     struct Url {
-        static let API_URL = ""
+        static let API_URL = "https://raw.githubusercontent.com/obvious/take-home-exercise-data/trunk/nasa-pictures.json"
     }
     
     struct HTTPMethod {

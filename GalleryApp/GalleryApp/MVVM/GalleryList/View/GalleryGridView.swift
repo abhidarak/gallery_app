@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct GalleryGridView: View {
+    
+    @StateObject var galleryVM: GalleryGridViewModel = GalleryGridViewModel()
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    init() {}
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            
+            VStack {
+                if galleryVM.isLoading {
+                    LoadingView()
+                } else {
+                    ScrollView {
+                        LazyVGrid(columns: columns, spacing: 2) {
+                            ForEach(galleryVM.galleryData.indices, id: \.self) { index in
+                                GalleryGridCell(galleryItem: galleryVM.galleryData[index])
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

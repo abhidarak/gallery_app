@@ -12,7 +12,7 @@ class ServiceAPI {
     
     static let sharedInstance = ServiceAPI()
     
-    func execute(path: String, params: KeyValuePairs<String, String>, onCompletion: @escaping(Result<JSON, Error>) -> Void) {
+    func execute(params: KeyValuePairs<String, String>, onCompletion: @escaping(Result<JSON, Error>) -> Void) {
         
         let finalParams = Util.toPostParams(rawParams: params)
         
@@ -37,9 +37,9 @@ class ServiceAPI {
         }.resume()
     }
 
-    func execute(path: String, onCompletion: @escaping(Result<JSON, Error>) -> Void) {
+    func execute(onCompletion: @escaping(Result<JSON, Error>) -> Void) {
         
-        let urlStr = Constant.Url.API_URL + path
+        let urlStr = Constant.Url.API_URL
         let url = URL(string: urlStr)!
         let session = URLSession.shared
         var request = URLRequest(url: url)
