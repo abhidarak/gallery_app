@@ -30,7 +30,12 @@ struct GalleryGridView: View {
                     ScrollView {
                         LazyVGrid(columns: columns, spacing: 2) {
                             ForEach(galleryVM.galleryData.indices, id: \.self) { index in
-                                GalleryGridCell(galleryItem: galleryVM.galleryData[index])
+                                
+                                NavigationLink(destination: GalleryDetailView(galleryList: galleryVM.galleryData, selectedIndex: index)) {
+                                    
+                                GalleryGridCell(galleryItem: galleryVM.galleryData[index], allGalleryItems: galleryVM.galleryData)
+                                    
+                                }
                             }
                         }
                     }

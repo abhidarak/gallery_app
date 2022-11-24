@@ -32,6 +32,7 @@
 		A151A11A292E073600322EB6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A151A119292E073600322EB6 /* SDWebImageSwiftUI */; };
 		A151A11D292E092100322EB6 /* GalleryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A11C292E092100322EB6 /* GalleryDetailView.swift */; };
 		A151A11E292E092100322EB6 /* GalleryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A11C292E092100322EB6 /* GalleryDetailView.swift */; };
+		A151A121292F336000322EB6 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = A151A120292F336000322EB6 /* SwiftUIPager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 			files = (
 				A151A11A292E073600322EB6 /* SDWebImageSwiftUI in Frameworks */,
 				A151A104292DEEFD00322EB6 /* SwiftyJSON in Frameworks */,
+				A151A121292F336000322EB6 /* SwiftUIPager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +288,7 @@
 			packageProductDependencies = (
 				A151A103292DEEFD00322EB6 /* SwiftyJSON */,
 				A151A119292E073600322EB6 /* SDWebImageSwiftUI */,
+				A151A120292F336000322EB6 /* SwiftUIPager */,
 			);
 			productName = GalleryApp;
 			productReference = A151A0C7292DE85000322EB6 /* GalleryApp.app */;
@@ -362,6 +365,7 @@
 			packageReferences = (
 				A151A102292DEEFD00322EB6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				A151A118292E073600322EB6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				A151A11F292F336000322EB6 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
 			);
 			productRefGroup = A151A0C8292DE85000322EB6 /* Products */;
 			projectDirPath = "";
@@ -759,6 +763,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		A151A11F292F336000322EB6 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -771,6 +783,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A151A118292E073600322EB6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		A151A120292F336000322EB6 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A151A11F292F336000322EB6 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

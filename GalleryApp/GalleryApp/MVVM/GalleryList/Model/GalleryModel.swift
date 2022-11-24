@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct GalleryModel: Codable, Identifiable {
-    let id: String?
+struct GalleryModel: Codable, Identifiable, Equatable {
+    let id: String = UUID().uuidString
     let copyright: String?
     let date: String?
     let explanation: String?
