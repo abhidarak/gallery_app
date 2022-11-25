@@ -15,21 +15,20 @@ struct GalleryGridCell: View {
     
     var body: some View {
         
-        
-            
-            VStack {
-                WebImage(url: URL(string: galleryItem.url))
-                    .resizable()
-                    .frame(width: .infinity, height: 80, alignment: Alignment.center)
-                
-            
+        VStack {
+            WebImage(url: URL(string: galleryItem.url))
+                .resizable()
+                .placeholder {
+                    LoadingView().frame(maxWidth: .infinity, minHeight: (UIScreen.main.bounds.width - 8)/3, alignment: .center)
+                }
+                .frame(width: (UIScreen.main.bounds.width - 8)/3, height: (UIScreen.main.bounds.width - 8)/3, alignment: Alignment.center)
         }
     }
 }
 
 /*
-struct GalleryGridCell_Previews: PreviewProvider {
-    static var previews: some View {
-        GalleryGridCell(galleryItem: GalleryModel(id: "", copyright: "", date: "", explanation: "", hdUrl: "", mediaType: "", serviceVersion: "", title: "Test Title", url: ""))
-    }
-}*/
+ struct GalleryGridCell_Previews: PreviewProvider {
+ static var previews: some View {
+ GalleryGridCell(galleryItem: GalleryModel(id: "", copyright: "", date: "", explanation: "", hdUrl: "", mediaType: "", serviceVersion: "", title: "Test Title", url: ""))
+ }
+ }*/

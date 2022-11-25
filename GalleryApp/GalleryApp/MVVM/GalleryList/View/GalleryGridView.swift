@@ -25,15 +25,15 @@ struct GalleryGridView: View {
             
             VStack {
                 if galleryVM.isLoading {
-                    LoadingView()
+                    LoadingView().frame(width: .infinity, height: 200, alignment: .center)
                 } else {
                     ScrollView {
-                        LazyVGrid(columns: columns, spacing: 2) {
+                        LazyVGrid(columns: columns, spacing: 4) {
                             ForEach(galleryVM.galleryData.indices, id: \.self) { index in
                                 
-                                NavigationLink(destination: GalleryDetailView(galleryList: galleryVM.galleryData, selectedIndex: index)) {
+                                NavigationLink(destination: GalleryDetailView(galleryList: galleryVM.galleryData, page: .withIndex(index))) {
                                     
-                                GalleryGridCell(galleryItem: galleryVM.galleryData[index], allGalleryItems: galleryVM.galleryData)
+                                    GalleryGridCell(galleryItem: galleryVM.galleryData[index], allGalleryItems: galleryVM.galleryData)
                                     
                                 }
                             }
@@ -41,6 +41,7 @@ struct GalleryGridView: View {
                     }
                 }
             }
+            .navigationTitle("NASA Image Gallery")
         }
         .navigationBarBackButtonHidden(true)
     }

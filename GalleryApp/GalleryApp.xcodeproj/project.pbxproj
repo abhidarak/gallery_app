@@ -33,6 +33,10 @@
 		A151A11D292E092100322EB6 /* GalleryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A11C292E092100322EB6 /* GalleryDetailView.swift */; };
 		A151A11E292E092100322EB6 /* GalleryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A11C292E092100322EB6 /* GalleryDetailView.swift */; };
 		A151A121292F336000322EB6 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = A151A120292F336000322EB6 /* SwiftUIPager */; };
+		A151A12329308E1500322EB6 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A12229308E1500322EB6 /* LaunchScreen.swift */; };
+		A151A12429308E1500322EB6 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151A12229308E1500322EB6 /* LaunchScreen.swift */; };
+		A151A12629308E7F00322EB6 /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A151A12529308E7E00322EB6 /* LaunchView.xib */; };
+		A151A12729308E7F00322EB6 /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A151A12529308E7E00322EB6 /* LaunchView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,8 @@
 		A151A112292DF3B800322EB6 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
 		A151A115292DF48800322EB6 /* GalleryGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryGridViewModel.swift; sourceTree = "<group>"; };
 		A151A11C292E092100322EB6 /* GalleryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailView.swift; sourceTree = "<group>"; };
+		A151A12229308E1500322EB6 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		A151A12529308E7E00322EB6 /* LaunchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		A151A0BE292DE85000322EB6 = {
 			isa = PBXGroup;
 			children = (
+				A151A12529308E7E00322EB6 /* LaunchView.xib */,
 				A151A0C9292DE85000322EB6 /* GalleryApp */,
 				A151A0DA292DE85200322EB6 /* GalleryAppTests */,
 				A151A0E4292DE85200322EB6 /* GalleryAppUITests */,
@@ -131,6 +138,7 @@
 				A151A0CC292DE85000322EB6 /* LoadingView.swift */,
 				A151A0CE292DE85200322EB6 /* Assets.xcassets */,
 				A151A0D0292DE85200322EB6 /* Preview Content */,
+				A151A12229308E1500322EB6 /* LaunchScreen.swift */,
 			);
 			path = GalleryApp;
 			sourceTree = "<group>";
@@ -383,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A151A12629308E7F00322EB6 /* LaunchView.xib in Resources */,
 				A151A0D2292DE85200322EB6 /* Preview Assets.xcassets in Resources */,
 				A151A0CF292DE85200322EB6 /* Assets.xcassets in Resources */,
 			);
@@ -392,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A151A12729308E7F00322EB6 /* LaunchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +421,7 @@
 			files = (
 				A151A0CD292DE85000322EB6 /* LoadingView.swift in Sources */,
 				A151A10D292DF18500322EB6 /* GalleryGridView.swift in Sources */,
+				A151A12329308E1500322EB6 /* LaunchScreen.swift in Sources */,
 				A151A11D292E092100322EB6 /* GalleryDetailView.swift in Sources */,
 				A151A0FC292DED7F00322EB6 /* ServiceAPI.swift in Sources */,
 				A151A10A292DF05D00322EB6 /* Util.swift in Sources */,
@@ -428,6 +439,7 @@
 			files = (
 				A151A0FD292DED7F00322EB6 /* ServiceAPI.swift in Sources */,
 				A151A0DC292DE85200322EB6 /* GalleryAppTests.swift in Sources */,
+				A151A12429308E1500322EB6 /* LaunchScreen.swift in Sources */,
 				A151A108292DEF6F00322EB6 /* Constant.swift in Sources */,
 				A151A11E292E092100322EB6 /* GalleryDetailView.swift in Sources */,
 				A151A114292DF3B800322EB6 /* GalleryModel.swift in Sources */,
